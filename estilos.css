@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+.ListaDeTarefas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#interação{
+    margin: 10px;
+}
+
+#tarefas {
+    padding-right: 50px;
+    padding-left: 10px;
+    max-height: 400px; /* altura máxima */
+    overflow-y: auto; /* barra de rolagem vertical */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* quebra de linha */
+}
+
+#tarefas li {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-basis: calc(50% - 5px); /* largura de cada item (50% - 5px para dar espaço entre eles) */
+}
+
+#conteudo h1{
+    display: flex;
+    justify-content: center;
+}
+
+#conteudo{
+    border: 2px solid blue;
+    background-color: aqua;
+}

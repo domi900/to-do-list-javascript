@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-    <h1>lista de tarefas</h1>
-    <div id="tarefas">
-    </div>
-    <input id="textoNomeTarefa">
-    <button onclick="adicionar()">adicionar</button><button onclick="remover()">remover</button>
-
+    <section class="ListaDeTarefas">
+        <div id="conteudo">
+            <h1>Lista de Tarefas</h1>
+            <div id="tarefas"></div>
+            <div id="interação">
+                <input id="textoNomeTarefa">
+                <button onclick="adicionar()" style="margin-right: 10px;">adicionar</button><button onclick="remover()">remover</button>
+            </div>
+        </div>
+    </section>
 
 
     <script src="script.js"></script>
