@@ -8,16 +8,21 @@
     <link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
-    <section class="ListaDeTarefas">
-        <div id="conteudo">
-            <h1>Lista de Tarefas</h1>
-            <div id="tarefas"></div>
-            <div id="interação">
-                <input id="textoNomeTarefa">
-                <button onclick="adicionar()" style="margin-right: 10px;">adicionar</button><button onclick="remover()">remover</button>
-            </div>
-        </div>
-    </section>
+    <h1>Lista de Tarefas</h1>
+	<div class="container">
+		<ul id="tarefas">
+			<!-- Tarefas serão adicionadas dinamicamente aqui -->
+		</ul>
+        
+        <form>
+			<input type="text" id="textoNomeTarefa" placeholder="Digite o nome da tarefa...">
+			<button type="button" onclick="adicionar()">Adicionar</button>
+		</form>
+		<form>
+			<input type="text" id="textoNomeTarefaRemover" placeholder="Digite o nome da tarefa a ser removida...">
+			<button type="button" onclick="remover()">Remover</button>
+		</form>
+	</div>
 
 
     <script src="script.js"></script>

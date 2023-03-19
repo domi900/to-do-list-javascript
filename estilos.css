@@ -1,41 +1,76 @@
-*{
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
-.ListaDeTarefas{
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+form {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    height: 100vh;
-    flex-direction: column;
+    margin-bottom: 20px;
 }
 
-#interação{
-    margin: 10px;
-}
-
-#tarefas {
-    padding-right: 50px;
-    padding-left: 10px;
-    max-height: 400px; /* altura máxima */
-    overflow-y: auto; /* barra de rolagem vertical */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* quebra de linha */
-}
-
-#tarefas li {
+form input[type="text"] {
+    flex-grow: 1;
     margin-right: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #888888;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #888888;
     margin-bottom: 10px;
-    flex-basis: calc(50% - 5px); /* largura de cada item (50% - 5px para dar espaço entre eles) */
 }
 
-#conteudo h1{
-    display: flex;
-    justify-content: center;
+@media only screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+    
+    form input[type="text"] {
+        margin: 0 0 10px 0;
+    }
 }
 
-#conteudo{
-    border: 2px solid blue;
-    background-color: aqua;
+@media only screen and (max-width: 400px) {
+    .container {
+        padding: 0 10px;
+    }
 }
