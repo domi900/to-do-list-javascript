@@ -17,7 +17,3 @@ Este aplicativo foi desenvolvido com responsividade em mente e deve funcionar be
 - HTML
 - CSS
 - JavaScript
-
-## Autor
-
-Este projeto foi criado por [seu nome aqui].
